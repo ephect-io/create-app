@@ -1,6 +1,19 @@
-php_errors.log
+# Visual Studio Code
+.vscode
+
+# Composer
 vendor
+
+# NodeJS
 node_modules
+
+# Application resources
 cache
 runtime
+
+# Misc log files
+php_errors.log
+error.log
+
+# To be removed on user repo
 src
