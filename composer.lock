@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "be95403ab5ce61ecc97573b9cb5a2d18",
+    "packages": [
+        {
+            "name": "ephect-io/framework",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ephect-io/framework.git",
+                "reference": "2e3078967083608ec86120225e5d47ccfe91f935"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/2e3078967083608ec86120225e5d47ccfe91f935",
+                "reference": "2e3078967083608ec86120225e5d47ccfe91f935",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "framework/ephect/"
+                ],
+                "exclude-from-classmap": [],
+                "psr-4": {
+                    "Ephect\\": ""
+                },
+                "files": [
+                    "framework/ephect/core/constants.php",
+                    "framework/ephect/core/autoloader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "framework"
+            ],
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Blanchard",
+                    "email": "dpjb@hotmail.fr",
+                    "homepage": "https://code-phoenix.org",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Make PHP effective again!",
+            "homepage": "https://ephect.io",
+            "support": {
+                "issues": "https://github.com/ephect-io/framework/issues",
+                "source": "https://github.com/ephect-io/framework/tree/0.1"
+            },
+            "time": "2021-11-23T15:25:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
