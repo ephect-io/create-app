@@ -13,7 +13,7 @@ runtime
 
 # Misc log files
 php_errors.log
-error.log
+/logs/*
 
 # To be removed on user repo
 src
