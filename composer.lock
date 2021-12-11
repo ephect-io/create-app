@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be95403ab5ce61ecc97573b9cb5a2d18",
+    "content-hash": "26d88ad299c9737cf65833b1da50c2f9",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "0.1",
+            "version": "v0.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "c0c57a70db20c875477a3df0942b0dd2909b98f6"
+                "reference": "46bfa0b3994a79183ad134901adc1a67548fa351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/c0c57a70db20c875477a3df0942b0dd2909b98f6",
-                "reference": "c0c57a70db20c875477a3df0942b0dd2909b98f6",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/46bfa0b3994a79183ad134901adc1a67548fa351",
+                "reference": "46bfa0b3994a79183ad134901adc1a67548fa351",
                 "shasum": ""
             },
             "type": "library",
@@ -53,15 +53,17 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/0.1"
+                "source": "https://github.com/ephect-io/framework/tree/v0.2-alpha"
             },
-            "time": "2021-11-23T20:11:47+00:00"
+            "time": "2021-12-11T21:32:24+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ephect-io/framework": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
