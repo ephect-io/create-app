@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "v0.2-alpha",
+            "version": "v0.2.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "18dc61c2a8fbfd82703df197713b688626c71a26"
+                "reference": "e13ff1e1bbcfd4d8021353d7912dbb630b5346b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/18dc61c2a8fbfd82703df197713b688626c71a26",
-                "reference": "18dc61c2a8fbfd82703df197713b688626c71a26",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/e13ff1e1bbcfd4d8021353d7912dbb630b5346b7",
+                "reference": "e13ff1e1bbcfd4d8021353d7912dbb630b5346b7",
                 "shasum": ""
             },
             "type": "library",
@@ -53,9 +53,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/v0.2-alpha"
+                "source": "https://github.com/ephect-io/framework/tree/v0.2.1-alpha"
             },
-            "time": "2021-12-12T08:43:36+00:00"
+            "time": "2021-12-13T00:41:40+00:00"
         }
     ],
     "packages-dev": [],
