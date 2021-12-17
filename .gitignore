@@ -16,4 +16,4 @@ php_errors.log
 /logs/*
 
 # To be removed on user repo
-src
+app
