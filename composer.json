@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "ephect-io/framework": "^0.2-alpha"
+        "ephect-io/framework": "^0.3-alpha"
     }
 
 }
