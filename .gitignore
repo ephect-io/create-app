@@ -17,3 +17,5 @@ php_errors.log
 
 # To be removed on user repo
 app
+public
+config
