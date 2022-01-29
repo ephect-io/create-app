@@ -3,7 +3,7 @@
 
 namespace Ephect;
 
-use Ephect\CLI\Application;
+use Ephect\Framework\CLI\Application;
 
 include 'bootstrap.php';
 

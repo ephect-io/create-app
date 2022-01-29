@@ -1,0 +1,6 @@
+#!/bin/sh
+
+composer u --dev
+
+exit 0
+
