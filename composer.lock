@@ -4,39 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "028db66dd603b342d4f0489cc0800d78",
+    "content-hash": "f4b65bd646bba5d36f05e6c0e855e714",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "v0.3.1-alpha",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "3945c7c99282dc2f08209898fe9567e98fe28047"
+                "reference": "4a78ec58386135f3a39048c9c639b54bc6c999b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/3945c7c99282dc2f08209898fe9567e98fe28047",
-                "reference": "3945c7c99282dc2f08209898fe9567e98fe28047",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/4a78ec58386135f3a39048c9c639b54bc6c999b1",
+                "reference": "4a78ec58386135f3a39048c9c639b54bc6c999b1",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "framework/ephect/"
-                ],
-                "exclude-from-classmap": [],
-                "psr-4": {
-                    "Ephect\\": ""
-                },
                 "files": [
-                    "framework/ephect/core/constants.php",
-                    "framework/ephect/core/autoloader.php"
-                ]
+                    "Ephect/Framework/Core/constants.php",
+                    "Ephect/Framework/Core/Autoloader.php"
+                ],
+                "psr-4": {
+                    "Ephect\\": "Ephect/"
+                },
+                "classmap": [
+                    "Ephect/"
+                ],
+                "exclude-from-classmap": []
             },
             "notification-url": "https://packagist.org/downloads/",
             "include-path": [
-                "framework"
+                "Ephect"
             ],
             "license": [
                 "GPL-3.0+"
@@ -53,20 +54,20 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/v0.3.1-alpha"
+                "source": "https://github.com/ephect-io/framework/tree/v0.3.2-alpha"
             },
-            "time": "2022-01-29T15:57:59+00:00"
+            "time": "2022-02-19T13:37:12+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ephect-io/framework": 15
+        "ephect-io/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-composer u --dev
+composer u --optimize-autoloader
 
 exit 0
 
