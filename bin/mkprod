@@ -1,6 +1,6 @@
 #!/bin/sh
 
-composer u --no-dev --optimize-autoloader
+composer install --no-dev --optimize-autoloader
 
 exit 0
 
