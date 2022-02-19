@@ -4,35 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "640987bc0d705cc259bd69f363ac409b",
+    "content-hash": "f4b65bd646bba5d36f05e6c0e855e714",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "9c5e11a38613b30ee09ef4464df488aae27b9984"
+                "reference": "4a78ec58386135f3a39048c9c639b54bc6c999b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/9c5e11a38613b30ee09ef4464df488aae27b9984",
-                "reference": "9c5e11a38613b30ee09ef4464df488aae27b9984",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/4a78ec58386135f3a39048c9c639b54bc6c999b1",
+                "reference": "4a78ec58386135f3a39048c9c639b54bc6c999b1",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
+                "files": [
+                    "Ephect/Framework/Core/constants.php",
+                    "Ephect/Framework/Core/Autoloader.php"
+                ],
+                "psr-4": {
+                    "Ephect\\": "Ephect/"
+                },
                 "classmap": [
                     "Ephect/"
                 ],
-                "exclude-from-classmap": [],
-                "psr-4": {
-                    "Ephect\\": ""
-                },
-                "files": [
-                    "Ephect/Framework/Core/Constants.php",
-                    "Ephect/Framework/Core/Autoloader.php"
-                ]
+                "exclude-from-classmap": []
             },
             "notification-url": "https://packagist.org/downloads/",
             "include-path": [
@@ -53,9 +54,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/develop"
+                "source": "https://github.com/ephect-io/framework/tree/v0.3.2-alpha"
             },
-            "time": "2022-01-30T09:30:28+00:00"
+            "time": "2022-02-19T13:37:12+00:00"
         }
     ],
     "packages-dev": [],
@@ -68,5 +69,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
