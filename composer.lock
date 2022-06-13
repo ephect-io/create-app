@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4b65bd646bba5d36f05e6c0e855e714",
+    "content-hash": "6983d6e6fdf983215c4e86c581cbf008",
     "packages": [
         {
             "name": "ephect-io/framework",
@@ -57,13 +57,50 @@
                 "source": "https://github.com/ephect-io/framework/tree/v0.3.2-alpha"
             },
             "time": "2022-02-19T13:37:12+00:00"
+        },
+        {
+            "name": "ephect-io/javascripts",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ephect-io/javascripts.git",
+                "reference": "0539671b5a4bf5a2918002b081cd7318906f0a52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ephect-io/javascripts/zipball/0539671b5a4bf5a2918002b081cd7318906f0a52",
+                "reference": "0539671b5a4bf5a2918002b081cd7318906f0a52",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Blanchard",
+                    "email": "dpjb@hotmail.fr",
+                    "homepage": "https://code-phoenix.org",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A client side javascript library to interoperate with ephect PHP library",
+            "homepage": "https://ephect.io",
+            "support": {
+                "issues": "https://github.com/ephect-io/javascripts/issues",
+                "source": "https://github.com/ephect-io/javascripts/tree/main"
+            },
+            "time": "2022-06-12T09:24:23+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ephect-io/framework": 20
+        "ephect-io/framework": 20,
+        "ephect-io/javascripts": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

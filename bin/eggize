@@ -1,7 +1,8 @@
 #!/bin/sh
 VENDOR=vendor/ephect-io
 FRAMEWORK=framework
-SOURCE=~../framework
+APP_DIR=$(pwd)
+SOURCE=$(realpath $APP_DIR"/../framework")
 
 if [ ! -d "./$VENDOR/$FRAMEWORK" ];
 then

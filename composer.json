@@ -12,7 +12,8 @@
     }],
 
     "require": {
-        "ephect-io/framework": "dev-main"
+        "ephect-io/framework": "dev-main",
+        "ephect-io/javascripts": "dev-main"
     }
 
 }
