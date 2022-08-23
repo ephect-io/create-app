@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "75f847f100d776dd8e5d41ded5ef3592dd11e9f0"
+                "reference": "f489fb72948be6564a74efb4d82f62f59d68443e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/75f847f100d776dd8e5d41ded5ef3592dd11e9f0",
-                "reference": "75f847f100d776dd8e5d41ded5ef3592dd11e9f0",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/f489fb72948be6564a74efb4d82f62f59d68443e",
+                "reference": "f489fb72948be6564a74efb4d82f62f59d68443e",
                 "shasum": ""
             },
             "default-branch": true,
@@ -54,9 +54,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/0.3.4-alpha"
+                "source": "https://github.com/ephect-io/framework/tree/main"
             },
-            "time": "2022-07-11T05:39:20+00:00"
+            "time": "2022-08-22T11:08:28+00:00"
         },
         {
             "name": "ephect-io/javascripts",
@@ -106,5 +106,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
