@@ -32,7 +32,7 @@ The pages can be compiled in two different ways: on CLI or on browser first open
 You must have a ZTS enabled version of PHP
 
 ```bash
-php egg compile
+php egg build
 ```
 
 or

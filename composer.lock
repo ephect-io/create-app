@@ -4,23 +4,22 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6983d6e6fdf983215c4e86c581cbf008",
+    "content-hash": "14e6dbcf51583fff327a1f9792f60fbd",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "dev-main",
+            "version": "0.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "75f847f100d776dd8e5d41ded5ef3592dd11e9f0"
+                "reference": "506fab812033447ec42ec61aaeb1312c94e68ff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/75f847f100d776dd8e5d41ded5ef3592dd11e9f0",
-                "reference": "75f847f100d776dd8e5d41ded5ef3592dd11e9f0",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/506fab812033447ec42ec61aaeb1312c94e68ff9",
+                "reference": "506fab812033447ec42ec61aaeb1312c94e68ff9",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -46,7 +45,7 @@
                 {
                     "name": "David Blanchard",
                     "email": "dpjb@hotmail.fr",
-                    "homepage": "https://code-phoenix.org",
+                    "homepage": "https://ephect.io",
                     "role": "Creator"
                 }
             ],
@@ -54,9 +53,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/0.3.4-alpha"
+                "source": "https://github.com/ephect-io/framework/tree/0.3.5"
             },
-            "time": "2022-07-11T05:39:20+00:00"
+            "time": "2022-09-10T09:02:52+00:00"
         },
         {
             "name": "ephect-io/javascripts",
@@ -99,12 +98,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ephect-io/framework": 20,
         "ephect-io/javascripts": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }

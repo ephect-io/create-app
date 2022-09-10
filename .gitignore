@@ -1,5 +1,10 @@
 # Visual Studio Code
 .vscode
+.devcontainer
+*.code-workspace
+
+# JetBrains tools
+.idea
 
 # Composer
 vendor
@@ -10,6 +15,10 @@ node_modules
 # Application resources
 cache
 runtime
+
+# Docker setup
+docker
+docker-compose.yml
 
 # Misc log files
 php_errors.log
