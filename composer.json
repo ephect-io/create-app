@@ -4,6 +4,7 @@
     "description": "Make PHP effective again!",
     "homepage": "https://ephect.io",
     "license": "GPL-3.0+",
+    "version": "0.3.6",
     "authors": [{
         "name": "David Blanchard",
         "email": "dpjb@hotmail.fr",
@@ -12,7 +13,7 @@
     }],
 
     "require": {
-        "ephect-io/framework": "0.3.5",
+        "ephect-io/framework": "0.3.6",
         "ephect-io/javascripts": "dev-main"
     }
 
