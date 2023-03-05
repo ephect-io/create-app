@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fc1f5688da12a1582ccf88baf2d6fa7",
+    "content-hash": "9d3489b7fa4658d4ebf7824dbb738559",
     "packages": [
         {
             "name": "ephect-io/framework",
