@@ -15,7 +15,12 @@
     "require": {
         "ephect-io/framework": "0.3.6",
         "ephect-io/javascripts": "dev-main",
-      "ext-tidy": "*"
+      "ext-tidy": "*",
+      "ext-curl": "*",
+      "ext-mbstring": "*",
+        "ext-zip": "*",
+      "ext-readline": "*",
+      "ext-pcntl": "*"
     }
 
 }
