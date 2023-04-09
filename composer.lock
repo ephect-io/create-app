@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d3489b7fa4658d4ebf7824dbb738559",
+    "content-hash": "b5772eb3eff477e252281f8a9c18bdbf",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "0.3.6",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "f107cad3db6dddfcc6d178f5255d11cef1fcb587"
+                "reference": "540fc2b8d638334833448ca7dd93ce8fa2093840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/f107cad3db6dddfcc6d178f5255d11cef1fcb587",
-                "reference": "f107cad3db6dddfcc6d178f5255d11cef1fcb587",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/540fc2b8d638334833448ca7dd93ce8fa2093840",
+                "reference": "540fc2b8d638334833448ca7dd93ce8fa2093840",
                 "shasum": ""
             },
             "type": "library",
@@ -53,9 +53,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/0.3.6"
+                "source": "https://github.com/ephect-io/framework/tree/develop"
             },
-            "time": "2022-10-23T20:55:49+00:00"
+            "time": "2023-04-09T10:10:33+00:00"
         },
         {
             "name": "ephect-io/javascripts",
@@ -98,6 +98,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "ephect-io/framework": 20,
         "ephect-io/javascripts": 20
     },
     "prefer-stable": false,
