@@ -16,6 +16,9 @@ node_modules
 cache
 runtime
 
+# Developer framework
+framework
+
 # Docker setup
 docker
 docker-compose.yml
@@ -24,8 +27,11 @@ docker-compose.yml
 php_errors.log
 /logs/*
 
+# Auto-generated files
+ajil.js
+
 # To be removed on user repo
 app
-public
 config
-ajil.js
+public
+www
