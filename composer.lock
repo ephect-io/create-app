@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "b87793e4a4d03ead5e2bd18cb0491d3f62c43142"
+                "reference": "71541e012e593e1383306ee01c402d196fde6cfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/b87793e4a4d03ead5e2bd18cb0491d3f62c43142",
-                "reference": "b87793e4a4d03ead5e2bd18cb0491d3f62c43142",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/71541e012e593e1383306ee01c402d196fde6cfe",
+                "reference": "71541e012e593e1383306ee01c402d196fde6cfe",
                 "shasum": ""
             },
             "type": "library",
@@ -55,7 +55,7 @@
                 "issues": "https://github.com/ephect-io/framework/issues",
                 "source": "https://github.com/ephect-io/framework/tree/v0.5.0"
             },
-            "time": "2023-04-11T06:24:51+00:00"
+            "time": "2023-04-11T07:16:20+00:00"
         },
         {
             "name": "ephect-io/javascripts",
