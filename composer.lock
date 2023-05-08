@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9078c0e18a3ed11b7f69e2b9925f8e31",
+    "content-hash": "ae72c926503996643591ce94b0999041",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "71541e012e593e1383306ee01c402d196fde6cfe"
+                "reference": "87cc73fb58f1fdd0873125e66072cc5657e60031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/71541e012e593e1383306ee01c402d196fde6cfe",
-                "reference": "71541e012e593e1383306ee01c402d196fde6cfe",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/87cc73fb58f1fdd0873125e66072cc5657e60031",
+                "reference": "87cc73fb58f1fdd0873125e66072cc5657e60031",
                 "shasum": ""
             },
             "type": "library",
@@ -49,13 +49,13 @@
                     "role": "Creator"
                 }
             ],
-            "description": "Make PHP effective again!",
+            "description": "Effective!",
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/v0.5.0"
+                "source": "https://github.com/ephect-io/framework/tree/v0.5.1"
             },
-            "time": "2023-04-11T07:16:20+00:00"
+            "time": "2023-05-08T13:16:31+00:00"
         },
         {
             "name": "ephect-io/javascripts",
