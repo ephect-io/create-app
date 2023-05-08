@@ -1,10 +1,10 @@
 {
     "name": "ephect-io/create-app",
-    "type": "library",
-    "description": "Make PHP effective again!",
+    "type": "application",
+    "description": "Effective!",
     "homepage": "https://ephect.io",
     "license": "GPL-3.0+",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "authors": [{
         "name": "David Blanchard",
         "email": "dpjb@hotmail.fr",
@@ -13,7 +13,7 @@
     }],
 
     "require": {
-        "ephect-io/framework": "0.5.0",
+        "ephect-io/framework": "0.5.1",
         "ephect-io/javascripts": "dev-main"
     }
 
