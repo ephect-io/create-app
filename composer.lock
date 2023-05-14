@@ -4,40 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bba42e803aa8fa954584c3db8fc61fd",
+    "content-hash": "d9a7459e8bdc684ccacff19dc74d1d7c",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "0.5.2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "e424e4219fc1902c52eca9b0896e4a999f679b49"
+                "reference": "1a0ce9bcc389cb0c120580d5fc55b20938d53dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/e424e4219fc1902c52eca9b0896e4a999f679b49",
-                "reference": "e424e4219fc1902c52eca9b0896e4a999f679b49",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/1a0ce9bcc389cb0c120580d5fc55b20938d53dea",
+                "reference": "1a0ce9bcc389cb0c120580d5fc55b20938d53dea",
                 "shasum": ""
             },
             "type": "library",
-            "autoload": {
-                "files": [
-                    "Ephect/Framework/Core/constants.php",
-                    "Ephect/Framework/Core/Autoloader.php"
-                ],
-                "psr-4": {
-                    "Ephect\\": "Ephect/"
-                },
-                "classmap": [
-                    "Ephect/"
-                ],
-                "exclude-from-classmap": []
-            },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "Ephect"
-            ],
             "license": [
                 "GPL-3.0+"
             ],
@@ -53,9 +37,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/v0.5.2"
+                "source": "https://github.com/ephect-io/framework/tree/develop"
             },
-            "time": "2023-05-13T13:57:20+00:00"
+            "time": "2023-05-14T08:45:11+00:00"
         },
         {
             "name": "ephect-io/javascripts",
@@ -98,6 +82,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "ephect-io/framework": 20,
         "ephect-io/javascripts": 20
     },
     "prefer-stable": false,

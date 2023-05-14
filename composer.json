@@ -11,9 +11,20 @@
         "homepage": "https://ephect.io",
         "role": "Creator"
     }],
-
+    "autoload": {
+        "classmap": [
+            "app/"
+        ],
+        "exclude-from-classmap": [],
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "include-path": [
+        "app"
+    ],
     "require": {
-        "ephect-io/framework": "0.5.2",
+        "ephect-io/framework": "dev-develop",
         "ephect-io/javascripts": "dev-main"
     }
 
