@@ -82,7 +82,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ephect-io/framework": 20,
         "ephect-io/javascripts": 20
     },
     "prefer-stable": false,
