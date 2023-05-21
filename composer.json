@@ -4,7 +4,7 @@
     "description": "Effective!",
     "homepage": "https://ephect.io",
     "license": "GPL-3.0+",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "authors": [{
         "name": "David Blanchard",
         "email": "dpjb@hotmail.fr",
@@ -24,7 +24,7 @@
         "app"
     ],
     "require": {
-        "ephect-io/framework": "dev-develop",
+        "ephect-io/framework": "^0.5",
         "ephect-io/javascripts": "dev-main"
     }
 
