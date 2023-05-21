@@ -1,3 +1,10 @@
+# Yarn stuff
+.editorconfig
+.gitattributes
+.yarnrc.yml
+yarn-error.log
+.yarn
+
 # Visual Studio Code
 .vscode
 .devcontainer

@@ -1,12 +1,13 @@
 {
+  "name": "create-app",
+  "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "human-writes": "^0.5.39",
-    "packageManager": "yarn@3.5.1"
+    "human-writes": "^0.5"
   },
   "scripts": {
-    "egg": "./egg",
-    "build": "./egg build",
-    "serve": "php -S localhost:8000 -t public"
+    "egg": "php egg",
+    "build": "php egg build",
+    "serve": "php egg serve"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
