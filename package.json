@@ -2,18 +2,11 @@
   "name": "create-app",
   "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "human-writes": "^0.5"
+    "@human-writes/web-components": "^0.5.62"
   },
   "scripts": {
     "egg": "php egg",
     "build": "php egg build",
     "serve": "php egg serve"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.8",
-    "@babel/preset-env": "^7.21.5",
-    "babel-loader": "^9.1.2",
-    "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1"
   }
 }
