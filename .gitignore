@@ -38,7 +38,4 @@ php_errors.log
 ajil.js
 
 # To be removed on user repo
-app
 config
-public
-www

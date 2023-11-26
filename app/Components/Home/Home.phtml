@@ -1,0 +1,29 @@
+<?php
+
+namespace QuickStart;
+
+use Com as QuickStartCom;
+
+use function Ephect\Hooks\useState;
+
+function Home()
+{
+    useState(['m' => ['n' => 'with a']]);
+
+    return (<<< HTML
+    <Mother>
+        <Slot name="title">Ephect in action !</Slot>
+        <Slot name="stylesheets">
+            <link rel="stylesheet" href="/css/index.css" />
+            <link rel="stylesheet" href="/css/app.css" />
+        </Slot>
+        <div class="App-content" >
+            <TextWriter source="/Com/Com.html" styles="/css/app.css" classes="App-content" />
+            <QuickStartCom message="Hello World!" from="the app" />
+        </div>
+        <Slot name="javascripts">
+            <script type="module" src="/js/runtime/TextWriter/TextWriter.mjs"></script>
+        </Slot>
+    </Mother>
+    HTML);
+}
