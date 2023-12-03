@@ -2,7 +2,7 @@
   "name": "create-app",
   "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "@human-writes/web-components": "^0.5.62"
+    "human-writes": "^0.7.2"
   },
   "scripts": {
     "egg": "php egg",

@@ -5,34 +5,29 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@human-writes/core@npm:^0.5.61":
-  version: 0.5.61
-  resolution: "@human-writes/core@npm:0.5.61"
-  checksum: b9e1d3e76b6c7c1372feebe2834fe524d4dcf5eb62137d8a90693729afcc8b97256e7e531d9dc7a1813ceb6eda39d6f9d22d285da5b160218adb8938847777a5
-  languageName: node
-  linkType: hard
-
-"@human-writes/web-components@npm:^0.5.62":
-  version: 0.5.62
-  resolution: "@human-writes/web-components@npm:0.5.62"
-  dependencies:
-    "@human-writes/core": ^0.5.61
-    highlight.js: 11.8.0
-  checksum: fbbf873253b7f7d2589792c188ea871ab307bf482a6d6ddd983c672069b152941e543dfd587e328037cf29b1fccb20caad124fc4e16d6be1361b00b7a10d5f6b
-  languageName: node
-  linkType: hard
-
 "create-app@workspace:.":
   version: 0.0.0-use.local
   resolution: "create-app@workspace:."
   dependencies:
-    "@human-writes/web-components": ^0.5.62
+    human-writes: ^0.7.2
   languageName: unknown
   linkType: soft
 
-"highlight.js@npm:11.8.0":
-  version: 11.8.0
-  resolution: "highlight.js@npm:11.8.0"
-  checksum: d2578a57aee7315946ff19379053fd0a28b127baabf7617ab1d28d62cdc4eaf3d75053569cb8479a5afdc7a68f1ba9a6c1d612d8ae399b4b9aa43093b4fb6831
+"highlight.js@npm:^11.8.0":
+  version: 11.9.0
+  resolution: "highlight.js@npm:11.9.0"
+  checksum: 4043d31c5de9d27d13387d9a9e5e1939557254b7b85f0fab85d9cae0e420e131a3456ebf6148552020a1d8a216d671d583f2433d6c4de6179b8a66487a8325cb
+  languageName: node
+  linkType: hard
+
+"human-writes@npm:^0.7.2":
+  version: 0.7.2
+  resolution: "human-writes@npm:0.7.2"
+  dependencies:
+    highlight.js: ^11.8.0
+  peerDependencies:
+    vue: ^3.3.4
+    vue-router: ^4.2.4
+  checksum: a9665736cc6ecd6e959bab4697a49073a1c7bfb0141ca1730a3a81bff6bf6ab31a4d7e3cf805930696b4008fcbbeccd73211a7645d9b1f9d9b307556ede60945
   languageName: node
   linkType: hard
