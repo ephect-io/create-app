@@ -1,0 +1,8 @@
+{
+    "tag": "hello-word",
+    "class": "HelloWord",
+    "entrypoint": "sayHello",
+    "arguments": [
+        "word"
+    ]
+}
