@@ -5,13 +5,15 @@
 yarn-error.log
 .yarn
 
-# Visual Studio Code
+# Code editors temporary files 
 .vscode
 .devcontainer
 *.code-workspace
-
-# JetBrains tools
 .idea
+.project
+.buildpath
+.settings
+nbproject
 
 # Composer
 vendor
@@ -39,3 +41,6 @@ ajil.js
 
 # To be removed on user repo
 config
+
+# Trash files 
+.DS_Store
