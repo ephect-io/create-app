@@ -49,7 +49,7 @@ dist
 test/public
 
 # To be removed on user repo
-app
+#app
 tmp
 www
-config
+#config
