@@ -1,19 +1,19 @@
-# Yarn stuff
-.editorconfig
-.gitattributes
-.yarnrc.yml
-yarn-error.log
-.yarn
-
-# Code editors temporary files 
+# Visual Studio Code
 .vscode
 .devcontainer
 *.code-workspace
-.idea
+.vscode-test
+.vs
+# NetBeans
+.nbproject
+# Eclipse
 .project
 .buildpath
 .settings
-nbproject
+# JetBrains tools
+.idea
+# MacOS
+.DS_Store
 
 # Composer
 vendor
@@ -24,9 +24,6 @@ node_modules
 # Application resources
 cache
 runtime
-
-# Developer framework
-framework
 
 # Docker setup
 docker
@@ -39,8 +36,20 @@ php_errors.log
 # Auto-generated files
 ajil.js
 
-# To be removed on user repo
-config
+# npm
+.npm
+.npmrc
 
-# Trash files 
-.DS_Store
+# yarn v2
+.yarn
+.pnp.*
+
+# builds
+dist
+test/public
+
+# To be removed on user repo
+app
+tmp
+www
+config
