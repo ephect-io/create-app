@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "0.6.0",
+            "version": "0.6.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "40068abe234acdf364b47dd8e748dd9978641b2f"
+                "reference": "b36f758f3a96e067ac1572d0dbc2f03415a4b193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/40068abe234acdf364b47dd8e748dd9978641b2f",
-                "reference": "40068abe234acdf364b47dd8e748dd9978641b2f",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/b36f758f3a96e067ac1572d0dbc2f03415a4b193",
+                "reference": "b36f758f3a96e067ac1572d0dbc2f03415a4b193",
                 "shasum": ""
             },
             "require": {
@@ -40,9 +40,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/v0.6.0"
+                "source": "https://github.com/ephect-io/framework/tree/v0.6.34"
             },
-            "time": "2023-11-21T18:07:36+00:00"
+            "time": "2024-01-06T17:48:07+00:00"
         },
         {
             "name": "ephect-io/javascripts",

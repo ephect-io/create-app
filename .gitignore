@@ -1,17 +1,19 @@
-# Yarn stuff
-.editorconfig
-.gitattributes
-.yarnrc.yml
-yarn-error.log
-.yarn
-
 # Visual Studio Code
 .vscode
 .devcontainer
 *.code-workspace
-
+.vscode-test
+.vs
+# NetBeans
+.nbproject
+# Eclipse
+.project
+.buildpath
+.settings
 # JetBrains tools
 .idea
+# MacOS
+.DS_Store
 
 # Composer
 vendor
@@ -22,9 +24,6 @@ node_modules
 # Application resources
 cache
 runtime
-
-# Developer framework
-framework
 
 # Docker setup
 docker
@@ -37,5 +36,21 @@ php_errors.log
 # Auto-generated files
 ajil.js
 
+# npm
+.npm
+.npmrc
+
+# yarn v2
+.yarn
+.pnp.*
+
+# builds
+dist
+test/public
+
 # To be removed on user repo
+app
+tmp
+www
+public
 config
