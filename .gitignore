@@ -52,4 +52,5 @@ test/public
 app
 tmp
 www
+public
 config
