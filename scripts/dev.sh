@@ -18,18 +18,14 @@ then
     webpack --config webpack.config.js;
 
     cp dist/app.min.js $DOCROOT
-
-    cp -rfv app/css $DOCROOT
-    cp -rfv assets/* $DOCROOT
-
-    #    cp -rfv app/js $DOCROOT
+    cp -rfv app/Assets/* $DOCROOT
 
     if [ ! -d "$DOCROOT/modules" ];
     then
         mkdir $DOCROOT/modules
     fi
 
-    cp -rfv ../../javascript/human-writes/dist/web/human-writes.min.js $DOCROOT/modules
+    cp -rfv node_modules/human-writes/dist/web/human-writes.min.js $DOCROOT/modules
 
     php ./egg build
 

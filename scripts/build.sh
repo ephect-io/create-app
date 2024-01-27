@@ -14,15 +14,11 @@ if [ "$TARGET" = "all" ];
 then
 
     rm -rf dist;
-    echo "Publishing the assets...";
+    echo "Compiling the javascripts...";
     gulp;
 
     cp dist/app.min.js $DOCROOT
-
     cp -rfv app/Assets/* $DOCROOT
-    cp -rfv assets/* $DOCROOT
-
-#    cp -rfv app/js public
 
     if [ ! -d "$DOCROOT/modules" ];
     then
