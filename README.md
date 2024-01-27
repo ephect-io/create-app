@@ -1,64 +1,58 @@
-# create-app
-Create a basic ephect application project
+![Ephect](app/Assets/img/salamandra.png)
 
-## Installation
+# Create-App
 
-### 1 - Call Composer update:
+This is a quickstart to help you create a functional Ephect project.
 
-```bash
-composer u
-```
+This repository is not meant to be cloned. Instead, follow the instruction below. 
 
-### 2 - Setup a sample application
+## Create a basic Ephect application project
 
-To help you start quickly you can install either an empty project with only one ready-to-use component:
+Open a terminal and type:
 
 ```bash
-php egg make:skeleton
+composer create-project ephect-io/create-app my-project
 ```
+## Install the sample application
 
-Otherwise you can learn more about _**ephect**_ features by testing the QuickStart samples:
+Move to *my-project* directory and type:
 
-```bash
-php egg make:quickstart
-```
+    php egg make:skeleton
 
-### 3 - Compile the application
+You will see a **app** directory in which you will find the standard structure of an Ephect application and a **public** 
+directory in which is stored the index.php. 
 
-The pages can be compiled in two different ways: on CLI or on browser first opening.
+## Build the application
 
-#### 3.1 - Using the CLI
+If no issue is popping up on the console then you can generate your application outside the browser.
 
-You must have a ZTS enabled version of PHP
+However, you first need to launch the embedded web server.
 
-```bash
-php egg build
-```
+If you're under Windows, you need to type this:
 
-or
+    php -S localhost:8888 -t src/public
 
-```bash
-yarn build
-```
+otherwise, MacOS and Linux accept this syntax:
 
-#### 3.2 - Using the web browser
+    php egg serve
 
-Open your application in a browser, all the pages will be compiled before the page called is displayed.
+Open another terminal, move to your project directory and type:
 
-This may be heavy so the CLI approach is recommended. 
+    php egg build
 
-### 4 - Serve the Application
+If you installed the QuickStart application as said previously, you should see something like this:
 
-You can easily test the result of your application by serving it with the server emebedded in PHP.
+    Compiling App ... 059ms
+    Compiling Home, querying http://localhost:8000/ ... 193ms
 
-```bash
-php -S localhost:8888 -t public/
-```
+It's a simple page with 2 children components; the first passes values to the second with useState hook.
+- http://localhost:8000/
 
-or
+You will find the generated application in the directory *cache*.
 
-```bash
-yarn serve
-```
+## Nota bene
 
-However, it's recommended to setup a real web server like Apache or Nginx.
+While this sample works well enough in the PHP embedded server, consider setting up a dedicated web server for your project.
+
+Find more information in the Documentation repository https://github.com/ephect-io/documentation.
+
