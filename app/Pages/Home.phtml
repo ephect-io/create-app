@@ -3,16 +3,15 @@
 namespace QuickStart;
 
 use Com as QuickStartCom;
-
 use function Ephect\Hooks\useState;
 
-function Home()
+function Home(): string
 {
     useState(['m' => ['n' => 'with a']]);
 
     return (<<< HTML
     <Mother>
-        <Slot name="title">Ephect in action !</Slot>
+        <Slot name="title">Ephect in action!</Slot>
         <Slot name="stylesheets">
             <link rel="stylesheet" href="/css/index.css" />
             <link rel="stylesheet" href="/css/app.css" />
