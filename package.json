@@ -8,6 +8,9 @@
     "serve": "php -S localhost:8880 -t www/",
     "lint": "sh scripts/lint.sh all"
   },
+  "engines": {
+    "node": "^20"
+  },
   "type": "module",
   "author": "",
   "license": "ISC",

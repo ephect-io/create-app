@@ -2,11 +2,11 @@
 
 namespace QuickStart;
 
-function Dummy()
+function Dummy(): string
 {
     $a = __FUNCTION__ . " component inside!";
 
-    return (<<< HTML
-    <p>{{ a }}</p>
-    HTML);
+return (<<< HTML
+<p>{{ a }}</p>
+HTML);
 }

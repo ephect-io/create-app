@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 class Ephect {
-    static DOM() {
-    }
+    static DOM() {}
 
     /**
      * Performs a AJAX request and return the result to a callback function
@@ -15,15 +14,15 @@ class Ephect {
      * @returns JSON stream on callback
      */
     static ajax(url, data, callback) {
-        Ephect.Rest.post(url, data, callback)
+        Ephect.Rest.post(url, data, callback);
     }
 }
 
 Ephect.DOM.ready = function (f) {
     /in/.test(document.readyState)
-        ? setTimeout('Ephect.DOM.ready(' + f + ')', 9)
-        : f()
-}
+        ? setTimeout("Ephect.DOM.ready(" + f + ")", 9)
+        : f();
+};
 
 Ephect.Rest = (function () {
     class F {
@@ -35,21 +34,23 @@ Ephect.Rest = (function () {
          * @returns JSON stream
          */
         head(url, callback) {
-            var xhr = new XMLHttpRequest()
-            xhr.setRequestHeader('Accept', 'application/json')
-            xhr.open('HEAD', url)
+            var xhr = new XMLHttpRequest();
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.open("HEAD", url);
             xhr.onload = function () {
-                if (typeof callback === 'function') {
+                if (typeof callback === "function") {
                     if (xhr.status === 200) {
                         var data =
-                            xhr.responseText !== '' ? JSON.parse(xhr.responseText) : []
-                        callback.call(this, data)
+                            xhr.responseText !== ""
+                                ? JSON.parse(xhr.responseText)
+                                : [];
+                        callback.call(this, data);
                     } else {
-                        callback.call(this, xhr.status)
+                        callback.call(this, xhr.status);
                     }
                 }
-            }
-            xhr.send()
+            };
+            xhr.send();
         }
 
         /**
@@ -60,21 +61,23 @@ Ephect.Rest = (function () {
          * @returns JSON stream
          */
         get(url, callback) {
-            var xhr = new XMLHttpRequest()
-            xhr.setRequestHeader('Accept', 'application/json')
-            xhr.open('GET', url)
+            var xhr = new XMLHttpRequest();
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.open("GET", url);
             xhr.onload = function () {
-                if (typeof callback === 'function') {
+                if (typeof callback === "function") {
                     if (xhr.status === 200) {
                         var data =
-                            xhr.responseText !== '' ? JSON.parse(xhr.responseText) : []
-                        callback.call(this, data)
+                            xhr.responseText !== ""
+                                ? JSON.parse(xhr.responseText)
+                                : [];
+                        callback.call(this, data);
                     } else {
-                        callback.call(this, xhr.status)
+                        callback.call(this, xhr.status);
                     }
                 }
-            }
-            xhr.send()
+            };
+            xhr.send();
         }
 
         /**
@@ -85,29 +88,34 @@ Ephect.Rest = (function () {
          * @returns JSON stream on callback
          */
         post(url, data, callback) {
-            var xhr = new XMLHttpRequest()
-            var params = ''
+            var xhr = new XMLHttpRequest();
+            var params = "";
             for (var key in data) {
                 if (undefined !== data[key]) {
-                    params += '&' + encodeURI(key + '=' + data[key])
+                    params += "&" + encodeURI(key + "=" + data[key]);
                 }
             }
-            params = params.substring(1)
-            xhr.setRequestHeader('Accept', 'application/json')
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-            xhr.open('POST', url)
+            params = params.substring(1);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.setRequestHeader(
+                "Content-Type",
+                "application/x-www-form-urlencoded"
+            );
+            xhr.open("POST", url);
             xhr.onload = function () {
-                if (typeof callback === 'function') {
+                if (typeof callback === "function") {
                     if (xhr.status === 200) {
                         var data =
-                            xhr.responseText !== '' ? JSON.parse(xhr.responseText) : []
-                        callback.call(this, data)
+                            xhr.responseText !== ""
+                                ? JSON.parse(xhr.responseText)
+                                : [];
+                        callback.call(this, data);
                     } else {
-                        callback.call(this, xhr.status)
+                        callback.call(this, xhr.status);
                     }
                 }
-            }
-            xhr.send(params)
+            };
+            xhr.send(params);
         }
 
         /**
@@ -118,29 +126,34 @@ Ephect.Rest = (function () {
          * @returns JSON stream on callback
          */
         patch(url, data, callback) {
-            var xhr = new XMLHttpRequest()
-            var params = ''
+            var xhr = new XMLHttpRequest();
+            var params = "";
             for (var key in data) {
                 if (undefined !== data[key]) {
-                    params += '&' + encodeURI(key + '=' + data[key])
+                    params += "&" + encodeURI(key + "=" + data[key]);
                 }
             }
-            params = params.substring(1)
-            xhr.setRequestHeader('Accept', 'application/json')
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-            xhr.open('PATCH', url)
+            params = params.substring(1);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.setRequestHeader(
+                "Content-Type",
+                "application/x-www-form-urlencoded"
+            );
+            xhr.open("PATCH", url);
             xhr.onload = function () {
-                if (typeof callback === 'function') {
+                if (typeof callback === "function") {
                     if (xhr.status === 200) {
                         var data =
-                            xhr.responseText !== '' ? JSON.parse(xhr.responseText) : []
-                        callback.call(this, data)
+                            xhr.responseText !== ""
+                                ? JSON.parse(xhr.responseText)
+                                : [];
+                        callback.call(this, data);
                     } else {
-                        callback.call(this, xhr.status)
+                        callback.call(this, xhr.status);
                     }
                 }
-            }
-            xhr.send(params)
+            };
+            xhr.send(params);
         }
 
         /**
@@ -151,22 +164,24 @@ Ephect.Rest = (function () {
          * @returns JSON stream on callback
          */
         put(url, data, callback) {
-            var xhr = new XMLHttpRequest()
-            xhr.setRequestHeader('Accept', 'application/json')
-            xhr.setRequestHeader('Content-Type', 'application/json')
-            xhr.open('PUT', url)
+            var xhr = new XMLHttpRequest();
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.open("PUT", url);
             xhr.onload = function () {
-                if (typeof callback === 'function') {
+                if (typeof callback === "function") {
                     if (xhr.status === 200) {
                         var data =
-                            xhr.responseText !== '' ? JSON.parse(xhr.responseText) : []
-                        callback.call(this, data)
+                            xhr.responseText !== ""
+                                ? JSON.parse(xhr.responseText)
+                                : [];
+                        callback.call(this, data);
                     } else {
-                        callback.call(this, xhr.status)
+                        callback.call(this, xhr.status);
                     }
                 }
-            }
-            xhr.send(JSON.stringify(data))
+            };
+            xhr.send(JSON.stringify(data));
         }
 
         /**
@@ -177,24 +192,25 @@ Ephect.Rest = (function () {
          * @returns JSON stream on callback
          */
         delete(url, callback) {
-            var xhr = new XMLHttpRequest()
-            xhr.setRequestHeader('Accept', 'application/json')
-            xhr.open('DELETE', url)
+            const xhr = new XMLHttpRequest();
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.open("DELETE", url);
             xhr.onload = function () {
-                if (typeof callback === 'function') {
+                if (typeof callback === "function") {
                     if (xhr.status === 200) {
                         var data =
-                            xhr.responseText !== '' ? JSON.parse(xhr.responseText) : []
-                        callback.call(this, data)
+                            xhr.responseText !== ""
+                                ? JSON.parse(xhr.responseText)
+                                : [];
+                        callback.call(this, data);
                     } else {
-                        callback.call(this, xhr.status)
+                        callback.call(this, xhr.status);
                     }
                 }
-            }
-            xhr.send()
+            };
+            xhr.send();
         }
     }
 
-    return new F()
-})()
-
+    return new F();
+})();
