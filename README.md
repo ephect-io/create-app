@@ -2,9 +2,9 @@
 
 # Create-App
 
-This is a quickstart to help you create a functional Ephect project.
+This is a quick start to help you create a working Ephect project.
 
-This repository is not meant to be cloned. Instead, follow the instruction below. 
+This repository is not intended to be cloned. Instead, follow the instructions below.
 
 ## Create a basic Ephect application project
 
@@ -24,13 +24,13 @@ directory in which is stored the index.php.
 
 ## Build the application
 
-If no issue is popping up on the console then you can generate your application outside the browser.
+If no problems appear in the console, you can generate your application outside the browser.
 
 However, you first need to launch the embedded web server.
 
 If you're under Windows, you need to type this:
 
-    php -S localhost:8888 -t src/public
+    php -S localhost:8000 -t src/public
 
 otherwise, MacOS and Linux accept this syntax:
 
@@ -42,8 +42,31 @@ Open another terminal, move to your project directory and type:
 
 If you installed the QuickStart application as said previously, you should see something like this:
 
-    Compiling App ... 059ms
-    Compiling Home, querying http://localhost:8000/ ... 193ms
+    npm run dev
+
+    > logo@1.0.0 dev
+    > sh scripts/dev.sh all
+
+    Building frontend app...
+    asset app.min.js 2.31 KiB [emitted] (name: main)
+    runtime modules 274 bytes 1 module
+    ./app/JavaScripts/index.js 212 bytes [built] [code generated]
+    webpack 5.89.0 compiled successfully in 161 ms
+
+    Publishing assets...
+    app/Assets/css -> public/css
+    app/Assets/css/app.css -> public/css/app.css
+    app/Assets/css/index.css -> public/css/index.css
+    app/Assets/css/setup.css -> public/css/setup.css
+    app/Assets/img -> public/img
+    app/Assets/img/css -> public/img/css
+    app/Assets/img/css/app.css -> public/img/css/app.css
+    app/Assets/img/css/index.css -> public/img/css/index.css
+    app/Assets/img/css/setup.css -> public/img/css/setup.css
+    app/Assets/img/salamandra.png -> public/img/salamandra.png
+    node_modules/human-writes/dist/web/human-writes.min.js -> public/modules/human-writes.min.js
+    Compiling App ... 016ms
+    Compiling Home, querying http://localhost:8000/ ... 060ms
 
 It's a simple page with 2 children components; the first passes values to the second with useState hook.
 - http://localhost:8000/
