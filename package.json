@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "sh scripts/dev.sh all",
     "build": "sh scripts/build.sh all",
-    "serve": "php -S localhost:8880 -t www/",
-    "lint": "sh scripts/lint.sh all"
+    "lint": "sh scripts/lint.sh all",
+    "wdev": "powershell scripts/dev.ps1 all",
+    "wbuild": "powershell scripts/build.ps1 all",
+    "wlint": "powershell scripts/lint.ps1 all",
+    "serve": "php -S localhost:8880 -t www/"
   },
   "engines": {
     "node": "^20"
