@@ -1,43 +1,56 @@
-# Get the target argument
-$Target = $args[0]
+param(
+    [string] $TARGET
+)
 
-# Get the current working directory
 $CWD = Get-Location
+$DOC_ROOT = Get-Content "$CWD\config\document_root"
+$APP_JS = "dist\app.min.js"
+$ASSETS_DIR = "app\Assets"
+$MODULES = @(
+    "node_modules\human-writes\dist\web\human-writes.min.js"
+)
 
-# Get the document root from the config file
-$DOCROOT = (Get-Content "$CWD\config\document_root" -Head 1)
-
-# Check if the target is missing
-if ([string]::IsNullOrEmpty($Target)) {
+if (-not $TARGET) {
     Write-Host "Target is missing."
     exit 1
 }
 
-# Check if the target is "all"
-if ($Target -eq "all") {
-    # Remove the dist directory
-    Remove-Item -Path "dist" -Recurse -Force -ErrorAction SilentlyContinue
-
-    Write-Host "Building web components..."
-    # Run webpack with the config file
+if ($TARGET -eq "all") {
+    Remove-Item -Path "dist" -Recurse -Force
+    Write-Host "Running webpack..."
     webpack --config webpack.config.js
 
-    # Copy the app.min.js file to the document root
-    Copy-Item -Path "dist\app.min.js" -Destination $DOCROOT
-
-    # Copy the app assets to the document root
-    Copy-Item -Path "app\Assets\*" -Destination $DOCROOT -Recurse
-
-    # Create the modules directory if it doesn't exist
-    if (!(Test-Path -Path "$DOCROOT\modules")) {
-        New-Item -Path "$DOCROOT\modules" -ItemType Directory
+    if (-not (Test-Path $APP_JS)) {
+        Write-Host "FATAL ERROR!"
+        Write-Host "Something went wrong while running webpack: dist/app.min.js not found."
+        exit 1
     }
 
-    # Copy the human-writes.min.js file to the modules directory
-    Copy-Item -Path "node_modules\human-writes\dist\web\human-writes.min.js" -Destination "$DOCROOT\modules"
+    Copy-Item $APP_JS $DOC_ROOT
+    Write-Host ""
 
-    # Run the egg build command
-    php ./egg build
+    Write-Host "Publishing assets..."
+    Copy-Item "$ASSETS_DIR\*" $DOC_ROOT -Recurse -Force
+    Write-Host ""
+
+    Write-Host "Sharing modules..."
+    if (-not (Test-Path "$DOC_ROOT\modules")) {
+        New-Item -Path "$DOC_ROOT\modules" -ItemType Directory | Out-Null
+    }
+
+    foreach ($module in $MODULES) {
+        if (-not (Test-Path $module)) {
+            Write-Host "FATAL ERROR!"
+            Write-Host "Module not found."
+            exit 1
+        }
+
+        Copy-Item $module "$DOC_ROOT\modules" -Recurse -Force
+    }
+    Write-Host ""
+
+    Write-Host "Building the app..."
+    php .\egg build
 }
 
 exit 0

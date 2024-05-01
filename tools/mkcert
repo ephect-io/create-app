@@ -47,7 +47,7 @@ then
 	mkdir -p ~/.certs;
 fi
 
-cd ~/.certs;
+cd ~/.certs || exit;
 
 if [ ! -f rootCA.key ];
 then
@@ -68,7 +68,7 @@ then
 	mkdir -p ~/.certs/${CN};
 fi
 
-cd ~/.certs/${CN};
+cd ~/.certs/${CN} || exit;
 
 openssl req \
  	-newkey rsa:2048 \

@@ -6,6 +6,14 @@ This is a quick start to help you create a working Ephect project.
 
 This repository is not intended to be cloned. Instead, follow the instructions below.
 
+## Requirements
+
+Since Ephect is an hybrid environment, you need both PHP and NodeJS installed.
+
+It's highly recommended to use the last versions. 
+
+Ephect is compatible with PHP 8.3 and NodeJS LTS 20.12.0.
+
 ## Create a basic Ephect application project
 
 Open a terminal and type:
@@ -13,60 +21,103 @@ Open a terminal and type:
 ```bash
 composer create-project ephect-io/create-app my-project
 ```
-## Install the sample application
+Move to *my-project* directory.
 
-Move to *my-project* directory and type:
+You will see an **app** directory in which you will find the standard structure of an Ephect application:
 
-    php egg make:skeleton
+```
+    app
+    ├── Assets
+    │   ├── css
+    │   │   ├── app.css
+    │   │   ├── index.css
+    │   └── img
+    │       └── salamandra.png
+    ├── Commands
+    │   └── Hello.php
+    ├── Components
+    │   ├── Additionals
+    │   │   ├── Footer.phtml
+    │   │   ├── Header.phtml
+    │   │   ├── HeaderAndFooter.phtml
+    │   │   └── Mother.phtml
+    │   └── Home
+    │       ├── Com.phtml
+    │       └── Dummy.phtml
+    ├── JavaScripts
+    │   └── index.js
+    ├── Pages
+    │   └── Home.phtml
+    ├── App.phtml
+    └── Switcher.phtml
+```
 
-You will see a **app** directory in which you will find the standard structure of an Ephect application and a **public** 
-directory in which is stored the index.php. 
+and a **public** directory in which is stored the index.php:
+
+```
+    public
+    ├── bootstrap.php
+    ├── favicon.ico
+    └── index.php
+```
 
 ## Build the application
 
-If no problems appear in the console, you can generate your application outside the browser.
+First, install all needed modules.
 
-However, you first need to launch the embedded web server.
+```bash
+npm install
+```
 
-If you're under Windows, you need to type this:
-
-    php -S localhost:8000 -t src/public
-
-otherwise, MacOS and Linux accept this syntax:
-
-    php egg serve
+To run the application without setting up a web server, you need to serve the application in a separate terminal. 
 
 Open another terminal, move to your project directory and type:
 
-    php egg build
+```bash
+php egg serve
+```
 
-If you installed the QuickStart application as said previously, you should see something like this:
+Come back to the first terminal and type
+```bash
+npm run dev
+```
 
-    npm run dev
+ You should see something like this:
 
-    > logo@1.0.0 dev
-    > sh scripts/dev.sh all
+```bash
+npm run dev
 
-    Building frontend app...
-    asset app.min.js 2.31 KiB [emitted] (name: main)
-    runtime modules 274 bytes 1 module
-    ./app/JavaScripts/index.js 212 bytes [built] [code generated]
-    webpack 5.89.0 compiled successfully in 161 ms
+> create-app@0.7.0 dev
+> run-script-os
 
-    Publishing assets...
-    app/Assets/css -> public/css
-    app/Assets/css/app.css -> public/css/app.css
-    app/Assets/css/index.css -> public/css/index.css
-    app/Assets/css/setup.css -> public/css/setup.css
-    app/Assets/img -> public/img
-    app/Assets/img/css -> public/img/css
-    app/Assets/img/css/app.css -> public/img/css/app.css
-    app/Assets/img/css/index.css -> public/img/css/index.css
-    app/Assets/img/css/setup.css -> public/img/css/setup.css
-    app/Assets/img/salamandra.png -> public/img/salamandra.png
-    node_modules/human-writes/dist/web/human-writes.min.js -> public/modules/human-writes.min.js
-    Compiling App ... 016ms
-    Compiling Home, querying http://localhost:8000/ ... 060ms
+> create-app@0.7.0 dev:darwin:linux
+> bash scripts/dev.sh all
+
+Running webpack...
+asset app.min.js 2.32 KiB [emitted] (name: main)
+runtime modules 274 bytes 1 module
+./app/JavaScripts/index.js 212 bytes [built] [code generated]
+webpack 5.91.0 compiled successfully in 257 ms
+
+Publishing assets...
+app/Assets/css -> public/css
+app/Assets/css/app.css -> public/css/app.css
+app/Assets/css/index.css -> public/css/index.css
+app/Assets/css/setup.css -> public/css/setup.css
+app/Assets/img -> public/img
+app/Assets/img/css -> public/img/css
+app/Assets/img/css/app.css -> public/img/css/app.css
+app/Assets/img/css/index.css -> public/img/css/index.css
+app/Assets/img/css/setup.css -> public/img/css/setup.css
+app/Assets/img/salamandra.png -> public/img/salamandra.png
+
+Sharing modules...
+node_modules/human-writes/dist/web/human-writes.min.js -> public/modules/human-writes.min.js
+
+Building the app...
+Compiling App ... 021ms
+Compiling Home, querying http://localhost:8000/ ... 017ms
+```
 
 It's a simple page with 2 children components; the first passes values to the second with useState hook.
 - http://localhost:8000/

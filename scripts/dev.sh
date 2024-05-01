@@ -1,9 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
 TARGET=$1;
 CWD=$(pwd);
-DOCROOT=$(head $CWD/config/document_root)
-
+DOC_ROOT=$(head $CWD/config/document_root)
+APP_JS=dist/app.min.js
+ASSETS_DIR=app/Assets
+MODULES=$(cat << LIST
+node_modules/human-writes/dist/web/human-writes.min.js
+LIST);
 if [ -z "$TARGET" ];
 then
     echo "Target is missing.";
@@ -14,19 +18,42 @@ if [ "$TARGET" = "all" ];
 then
 
     rm -rf dist;
-    echo "Building web components...";
+    echo "Running webpack...";
     webpack --config webpack.config.js;
 
-    cp dist/app.min.js $DOCROOT
-    cp -rfv app/Assets/* $DOCROOT
-
-    if [ ! -d "$DOCROOT/modules" ];
+    if [ ! -f "$APP_JS" ];
     then
-        mkdir $DOCROOT/modules
+      echo "FATAL ERROR!"
+      echo "Something went wrong while running webpack: $APP_JS not found.";
+      exit 1;
     fi
 
-    cp -rfv node_modules/human-writes/dist/web/human-writes.min.js $DOCROOT/modules
+    cp $APP_JS $DOC_ROOT
+    echo;
+    
+    echo "Publishing assets...";
+    cp -rfv $ASSETS_DIR/* $DOC_ROOT
+    echo;
 
+    echo "Sharing modules...";
+    if [ ! -d "$DOC_ROOT/modules" ];
+    then
+        mkdir $DOC_ROOT/modules
+    fi
+
+    for i in $MODULES; do
+      if [ ! -f $i ];
+      then
+        echo "FATAL ERROR!"
+        echo "Module not found.";
+        exit 1;
+      fi
+
+      cp -rfv $i $DOC_ROOT/modules
+    done;
+    echo;
+
+    echo "Building the app...";
     php ./egg build
 
 fi
