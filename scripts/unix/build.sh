@@ -18,7 +18,11 @@ fi
 if [ "$TARGET" = "all" ];
 then
 
-    rm -rf dist;
+    if [ -d "dist" ];
+    then
+      rm -rf dist;
+    fi
+
     echo "Running gulp...";
     gulp;
 

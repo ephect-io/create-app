@@ -34,7 +34,6 @@ $MODULES = @(
     "node_modules/human-writes/dist/web/human-writes.min.js"
 )
 
-
 # Check if target is provided
 if ([string]::IsNullOrEmpty($TARGET)) {
     Write-Host "Target is missing."
@@ -43,8 +42,10 @@ if ([string]::IsNullOrEmpty($TARGET)) {
 
 # Process "all" target
 if ($TARGET -eq "all") {
-    # Remove dist directory
-    Remove-Item -Recurse -Force "dist"
+    # Remove dist directory if exists
+    if ((Test-Path "dist")) {
+        Remove-Item -Path "dist" -Recurse -Force
+    }
 
     Write-Host "Running gulp..."
     # Invoke gulp (assuming it's available as a command)
