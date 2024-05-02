@@ -31,8 +31,13 @@ You will see an **app** directory in which you will find the standard structure 
     │   ├── css
     │   │   ├── app.css
     │   │   ├── index.css
-    │   └── img
-    │       └── salamandra.png
+    │   ├── img
+    │   │   └── salamandra.png
+    │   ├── .htaccess
+    │   ├── bootstrap.php
+    │   ├── favicon.ico
+    │   ├── index.php
+    │   └── web.config
     ├── Commands
     │   └── Hello.php
     ├── Components
@@ -52,7 +57,7 @@ You will see an **app** directory in which you will find the standard structure 
     └── Switcher.phtml
 ```
 
-and a **public** directory in which is stored the index.php:
+the **public** directory is not empty but its files are later overwritten by assets files:
 
 ```
     public
@@ -85,8 +90,6 @@ npm run dev
  You should see something like this:
 
 ```bash
-npm run dev
-
 > create-app@0.7.0 dev
 > run-script-os
 
