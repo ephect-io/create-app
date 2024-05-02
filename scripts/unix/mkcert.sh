@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 C=$1;
 ST=$2;
 L=$3;

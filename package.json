@@ -4,14 +4,26 @@
   "description": "Quick start Ephect application",
   "scripts": {
     "dev": "run-script-os",
+    "dev:darwin:linux": "bash scripts/unix/dev.sh all",
+    "dev:win32": "powershell scripts/windows/dev.ps1 all",
     "build": "run-script-os",
+    "build:darwin:linux": "bash scripts/unix/build.sh all",
+    "build:win32": "powershell scripts/windows/build.ps1 all",
     "lint": "run-script-os",
-    "dev:darwin:linux": "bash scripts/dev.sh all",
-    "build:darwin:linux": "bash scripts/build.sh all",
-    "lint:darwin:linux": "bash scripts/lint.sh all",
-    "dev:win32": "powershell scripts/dev.ps1 all",
-    "build:win32": "powershell scripts/build.ps1 all",
-    "lint:win32": "powershell scripts/lint.ps1 all"
+    "lint:darwin:linux": "bash scripts/unix/lint.sh all",
+    "lint:win32": "powershell scripts/windows/lint.ps1 all",
+    "eggize": "run-script-os",
+    "eggize:darwin:linux": "bash scripts/unix/eggize.sh",
+    "eggize:win32": "powershell scripts/windows/eggize.ps1",
+    "mkcert": "run-script-os",
+    "mkcert:darwin:linux": "bash scripts/unix/mkcert.sh",
+    "mkcert:win32": "powershell scripts/windows/mkcert.ps1",
+    "mkdev": "run-script-os",
+    "mkdev:darwin:linux": "bash scripts/unix/mkdev.sh",
+    "mkdev:win32": "powershell scripts/windows/mkdev.ps1",
+    "mkprod": "run-script-os",
+    "mkprod:darwin:linux": "bash scripts/unix/mkprod.sh",
+    "mkprod:win32": "powershell scripts/windows/mkprod.ps1"
   },
   "engines": {
     "node": "^20"

@@ -16,7 +16,10 @@ if (-not $TARGET) {
 }
 
 if ($TARGET -eq "all") {
-    Remove-Item -Path "dist" -Recurse -Force
+    if ((Test-Path "dist")) {
+        Remove-Item -Path "dist" -Recurse -Force
+    }
+
     Write-Host "Running webpack..."
     webpack --config webpack.config.js
 
