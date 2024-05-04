@@ -1,6 +1,6 @@
 {
   "name": "create-app",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Quick start Ephect application",
   "scripts": {
     "dev": "run-script-os",
