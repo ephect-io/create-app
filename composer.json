@@ -24,7 +24,7 @@
       "app"
     ],
     "require": {
-        "ephect-io/framework": "dev-featured",
+        "ephect-io/framework": "dev-develop",
         "ephect-io/javascripts": "dev-main"
     }
 

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e9d0dd591a63b1301a5bd80114b9458",
+    "content-hash": "0bee27a826b0924364a0af7e28f1e35d",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "dev-featured",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "4667fa6024d8d57b82c6dd0970a0ca2834cf3664"
+                "reference": "47853653006ec97a14ebe2f96a4f7ad4f3668ae6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/4667fa6024d8d57b82c6dd0970a0ca2834cf3664",
-                "reference": "4667fa6024d8d57b82c6dd0970a0ca2834cf3664",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/47853653006ec97a14ebe2f96a4f7ad4f3668ae6",
+                "reference": "47853653006ec97a14ebe2f96a4f7ad4f3668ae6",
                 "shasum": ""
             },
             "require": {
@@ -40,9 +40,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/featured"
+                "source": "https://github.com/ephect-io/framework/tree/develop"
             },
-            "time": "2024-05-04T18:42:00+00:00"
+            "time": "2024-05-04T19:20:32+00:00"
         },
         {
             "name": "ephect-io/javascripts",
@@ -92,5 +92,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
