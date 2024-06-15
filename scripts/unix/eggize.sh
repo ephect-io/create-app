@@ -4,6 +4,8 @@ FRAMEWORK=framework
 APP_DIR=$(pwd)
 SOURCE=$(realpath $APP_DIR"/../framework")
 
+echo APP_DIR equals $APP_DIR
+
 if [ ! -d "./$VENDOR/$FRAMEWORK" ];
 then
 	echo "Are you sure you're in the right place ?";

@@ -12,15 +12,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "4667fa6024d8d57b82c6dd0970a0ca2834cf3664"
+                "reference": "5440f77e7ed5bcc383253b7ff0f3b485ab3277ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/4667fa6024d8d57b82c6dd0970a0ca2834cf3664",
-                "reference": "4667fa6024d8d57b82c6dd0970a0ca2834cf3664",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/5440f77e7ed5bcc383253b7ff0f3b485ab3277ed",
+                "reference": "5440f77e7ed5bcc383253b7ff0f3b485ab3277ed",
                 "shasum": ""
             },
             "require": {
+                "ext-curl": "*",
+                "ext-iconv": "*",
+                "ext-mysqlnd": "*",
+                "ext-pdo": "*",
+                "ext-readline": "*",
+                "ext-sqlite3": "*",
+                "ext-zip": "*",
                 "php": "^8.2"
             },
             "type": "library",
@@ -42,7 +49,7 @@
                 "issues": "https://github.com/ephect-io/framework/issues",
                 "source": "https://github.com/ephect-io/framework/tree/featured"
             },
-            "time": "2024-05-04T18:42:00+00:00"
+            "time": "2024-06-09T05:25:44+00:00"
         },
         {
             "name": "ephect-io/javascripts",

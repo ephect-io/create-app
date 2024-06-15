@@ -8,6 +8,8 @@ use function Ephect\Hooks\useState;
 function Home(): string
 {
     useState(['m' => ['n' => 'with a']]);
+    $car = "205 Turbo";
+    $speed = "195";
 
     return (<<< HTML
     <Mother>
@@ -17,11 +19,13 @@ function Home(): string
             <link rel="stylesheet" href="/css/app.css" />
         </Slot>
         <div class="App-content" >
+            <MyDummy car="%car" speed="%speed" />    
             <text-writer source="/Com/Com.html" styles="/css/app.css" classes="App-content" ></text-writer>
             <QuickStartCom message="Hello World!" from="the app" />
         </div>
         <Slot name="javascripts">
             <script type="module" src="/modules/human-writes.min.js"></script>
+            <script type="module" src="/js/runtime/MyDummy/MyDummy.js"></script>
         </Slot>
     </Mother>
     HTML);
