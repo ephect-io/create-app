@@ -4,30 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e9d0dd591a63b1301a5bd80114b9458",
+    "content-hash": "6a5a7cf4c45832b3f9474baeb16dd0e1",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "dev-featured",
+            "version": "0.6.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "5440f77e7ed5bcc383253b7ff0f3b485ab3277ed"
+                "reference": "82c57d5f4fcd65c6474b1930b6c94554e6e0a9cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/5440f77e7ed5bcc383253b7ff0f3b485ab3277ed",
-                "reference": "5440f77e7ed5bcc383253b7ff0f3b485ab3277ed",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/82c57d5f4fcd65c6474b1930b6c94554e6e0a9cc",
+                "reference": "82c57d5f4fcd65c6474b1930b6c94554e6e0a9cc",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "ext-iconv": "*",
-                "ext-mysqlnd": "*",
-                "ext-pdo": "*",
-                "ext-readline": "*",
-                "ext-sqlite3": "*",
-                "ext-zip": "*",
                 "php": "^8.2"
             },
             "type": "library",
@@ -47,9 +40,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/featured"
+                "source": "https://github.com/ephect-io/framework/tree/v0.6.40"
             },
-            "time": "2024-06-09T05:25:44+00:00"
+            "time": "2024-01-27T22:13:44+00:00"
         },
         {
             "name": "ephect-io/javascripts",
@@ -92,7 +85,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ephect-io/framework": 20,
         "ephect-io/javascripts": 20
     },
     "prefer-stable": false,

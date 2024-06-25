@@ -7,7 +7,6 @@ use function Ephect\Hooks\useStateObject;
 
 function Com($props): string
 {
-    useEffect(function ($props, /* string */ $b, /* string */ $c, /* string */ $d, /* string */ $m) {
 
         $b = 'It is a';
         $c = 'functional component';
@@ -15,8 +14,6 @@ function Com($props): string
         [$state] = useStateObject();
 
         $m = $state->m;
-
-    });
 
 return (<<< HTML
 <HtmlSaver render="false" >
