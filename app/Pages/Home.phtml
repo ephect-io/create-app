@@ -3,11 +3,11 @@
 namespace QuickStart;
 
 use Com as QuickStartCom;
-use function Ephect\Hooks\useState;
+use function Ephect\Hooks\useStateObject;
 
 function Home(): string
 {
-    useState(['m' => ['n' => 'with a']]);
+    useStateObject(['m' => 'with a']);
     $car = "205 Turbo";
     $speed = "195";
 
