@@ -1,6 +1,5 @@
 #!/usr/bin/env php
 <?php
-
 namespace Ephect;
 
 use Ephect\Framework\CLI\Application;

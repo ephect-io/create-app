@@ -34,10 +34,10 @@ if ($target === 'all') {
     // Copy the 'human-writes' module to the 'modules' directory
     copy('node_modules/human-writes/dist/web/human-writes.min.js', $modulesDir . '/human-writes.min.js');
 
-    // Run the 'egg build' command
+    // Run the 'use build' command
     $output = null;
     $returnValue = null;
-    exec('php ./egg build', $output, $returnValue);
+    exec('php ./use build', $output, $returnValue);
 }
 
 exit(0);

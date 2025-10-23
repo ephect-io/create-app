@@ -79,7 +79,7 @@ To run the application without setting up a web server, you need to serve the ap
 Open another terminal, move to your project directory and type:
 
 ```bash
-php egg serve
+php use serve
 ```
 
 Come back to the first terminal and type

@@ -1,6 +1,5 @@
-function doSomething() {
-    const appContent = document.querySelector("div[class='App-content']")
-    appContent.addEventListener("finishedWriting", (e) => {
-        appContent.innerHTML = e.detail.content
-    })
-}
+/**
+ * Start your client-side application here.
+ *
+ * It may be a simple bootstrap importing other files.
+ */
