@@ -12,7 +12,7 @@
         - Copies assets to the document root.
         - Creates a "modules" directory in the document root if it doesn't exist.
         - Copies the "human-writes" module to the "modules" directory.
-        - Builds the application using the "egg" command.
+        - Builds the application using the "use" command.
 
 .PARAMETER Target
     The target to build. If not specified, the script will exit with an error.
@@ -85,8 +85,8 @@ if ($TARGET -eq "all") {
     Write-Host ""
 
     Write-Host "Building the app..."
-    # Execute php egg build (assuming php and egg are available)
-    php ./egg build
+    # Execute php use build (assuming php and use are available)
+    php ./use build
 }
 
 exit 0

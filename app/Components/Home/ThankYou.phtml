@@ -1,0 +1,15 @@
+<?php
+
+namespace QuickStart\Components\Home;
+
+use function Ephect\Modules\Html\Forms\HtmlSaver;
+
+function ThankYou($props): string
+{
+    return (<<< HTML
+    <HtmlSaver render="false" refresh="true">
+    <h1>Welcome {{ props->message }}</h1>
+    <h2>Thank you for installing Ephect!</h2>
+    </HtmlSaver>
+    HTML);
+}

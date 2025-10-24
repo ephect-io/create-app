@@ -1,6 +1,4 @@
 <?php
-
-define('EGG_FRAMEWORK', file_get_contents(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'framework'));
-
-include EGG_FRAMEWORK . DIRECTORY_SEPARATOR . 'bootstrap.php';
-include 'vendor/autoload.php';
+$cwd = dirname(__FILE__) . DIRECTORY_SEPARATOR;
+include $cwd . file_get_contents($cwd . 'config' . DIRECTORY_SEPARATOR . 'framework')
+    . DIRECTORY_SEPARATOR . 'bootstrap.php';

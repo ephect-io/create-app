@@ -1,13 +1,14 @@
 <?php
 
-namespace QuickStart;
+namespace QuickStart\Pages;
 
-use Com as QuickStartCom;
-use function Ephect\Hooks\useState;
+use function QuickStart\Components\Additionals\Mother;
+use function QuickStart\Components\Home\ThankYou;
 
-function Home(): string
+function Home($props): string
 {
-    useState(['m' => ['n' => 'with a']]);
+
+    $name = $props->name ?? 'Guest';
 
     return (<<< HTML
     <Mother>
@@ -17,11 +18,17 @@ function Home(): string
             <link rel="stylesheet" href="/css/app.css" />
         </Slot>
         <div class="App-content" >
-            <text-writer source="/Com/Com.html" styles="/css/app.css" classes="App-content" ></text-writer>
-            <QuickStartCom message="Hello World!" from="the app" />
+            <code-writer source="/ThankYou/ThankYou.html" use-highlight-js="false" ></code-writer>
+            <ThankYou message="%name" />
         </div>
         <Slot name="javascripts">
             <script type="module" src="/modules/human-writes.min.js"></script>
+            <script src="ajil.js"
+                data-init="doSomething"
+                data-depends="/js/fake-dep.js"
+                data-sources="/js/home.js"
+            >
+            </script>
         </Slot>
     </Mother>
     HTML);

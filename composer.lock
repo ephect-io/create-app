@@ -4,26 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3271f04f9c20bcfbb2c61b41a5fb4960",
+    "content-hash": "a3f4f97309179689e73c65dd495d289b",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "0.7.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "1cebf23572adec1ca926077131030697c7cebe52"
+                "reference": "e04ed44dffee09e27f2a2f489e25c1b4123e1324"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/1cebf23572adec1ca926077131030697c7cebe52",
-                "reference": "1cebf23572adec1ca926077131030697c7cebe52",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/e04ed44dffee09e27f2a2f489e25c1b4123e1324",
+                "reference": "e04ed44dffee09e27f2a2f489e25c1b4123e1324",
                 "shasum": ""
             },
             "require": {
+                "ext-curl": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mysqlnd": "*",
+                "ext-pdo": "*",
+                "ext-readline": "*",
+                "ext-sqlite3": "*",
+                "ext-zip": "*",
                 "php": "^8.2"
             },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.88.2",
+                "phpunit/phpunit": "^12.4.0",
+                "squizlabs/php_codesniffer": "^4.0.0"
+            },
+            "bin": [
+                "bin/ephect-io_framework_install.sh"
+            ],
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ephect\\": "Ephect"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
@@ -40,9 +61,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/v0.7.1"
+                "source": "https://github.com/ephect-io/framework/tree/develop"
             },
-            "time": "2024-05-04T21:07:44+00:00"
+            "time": "2024-05-04T19:45:35+00:00"
         },
         {
             "name": "ephect-io/javascripts",
@@ -89,7 +110,7 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
