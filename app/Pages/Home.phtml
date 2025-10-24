@@ -3,13 +3,12 @@
 namespace QuickStart\Pages;
 
 use function QuickStart\Components\Additionals\Mother;
-use function QuickStart\Components\Home\Com as QuickStartCom;
+use function QuickStart\Components\Home\ThankYou;
 
-use function Ephect\Hooks\useStore;
-
-function Home(): string
+function Home($props): string
 {
-    useStore(['m' => 'with a']);
+
+    $name = $props->name ?? 'Guest';
 
     return (<<< HTML
     <Mother>
@@ -19,8 +18,8 @@ function Home(): string
             <link rel="stylesheet" href="/css/app.css" />
         </Slot>
         <div class="App-content" >
-            <code-writer source="/Com/Com.html" use-highlight-js="false" ></code-writer>
-            <QuickStartCom message="Hello World!" from="the app" />
+            <code-writer source="/ThankYou/ThankYou.html" use-highlight-js="false" ></code-writer>
+            <ThankYou message="%name" />
         </div>
         <Slot name="javascripts">
             <script type="module" src="/modules/human-writes.min.js"></script>

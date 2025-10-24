@@ -1,0 +1,17 @@
+<?php
+
+namespace QuickStart\Components\Additionals;
+
+use function QuickStart\Components\Additionals\Header;
+use function QuickStart\Components\Additionals\Footer;
+
+function HeaderAndFooter($children): string
+{
+    return (<<< HTML
+        <>
+            <Header />
+            {{ children }}
+            <Footer />
+        </>
+    HTML);
+}
