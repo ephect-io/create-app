@@ -9,7 +9,9 @@ function Switcher(): string
 {
     return (<<< HTML
     <Router>
-        <Route method='GET' rule='/(name)' exact='true' redirect='Home' />
+        <Route method='GET' rule='/welcome/(name)' exact='true' redirect='Home' />
+        <Route method='GET' rule='/welcome/?' exact='true' redirect='Home' />
+        <Route method='GET' rule='/404' exact='true' error='404' redirect='Error404' />
     </Router>
     HTML);
 }
